@@ -1,0 +1,279 @@
+
+
+body {
+    background-color: rgb(245, 245, 245);
+    /* background: rgb(225,198,153);
+background: linear-gradient(90deg, rgba(225,198,153,1) 0%, rgba(138,168,104,1) 100%); */
+    background-size: cover;
+
+}
+
+
+/*Navbar*/
+.navbar {
+    background-color: rgb(245, 245, 245);
+    /* background: rgb(213, 161, 70);
+    background: linear-gradient(90deg, rgb(213, 161, 70) 0%, rgb(109, 167, 42) 100%); */
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0px 0px 10px rgba(26, 176, 49, 0.698);
+
+}
+
+#letras {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: x-large;
+}
+
+#letras.active {
+    color: green;
+}
+
+#letras.sub{
+    color: green;
+    text-decoration: underline;
+}
+
+.icono{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    height: 60px;
+}
+
+
+
+/*Contenido*/
+.universidad{
+    padding: 50px 0px 50px 0px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagen {
+    width: 300px;
+    height: 300px;
+    background-image: url('../assets/images/unam-logo-vector.svg');
+    background-size: cover;
+    transition: background-image 0.5s;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px rgba(156, 156, 156, 0.698);
+    margin-left: auto;
+   
+}
+
+.imagen2 {
+    background-image: url('../assets/images/Biblioteca.jpg');
+    border-radius: 30px;
+}
+p{
+    text-align: justify;
+}
+h3{
+    border-bottom: double;
+}
+
+
+
+#intereses{
+    box-shadow: 0px 0px 10px rgba(156, 156, 156, 0.698);
+}
+.interes{
+    
+      text-align: center;
+    
+}
+
+#tecno img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Oculta la imagen de rebote por defecto */
+#tecno .teclado {
+    display: none;
+    margin: 0 auto; /* Añadido para centrar la imagen */
+}
+
+/* Añade una transición de suavizado al efecto */
+#tecno:hover .computadora {
+    display: none;
+}
+
+#tecno:hover .teclado {
+    display: block;
+}
+@keyframes mover {
+    0%, 100% {
+        transform: translatex(0);
+    }
+    50% {
+        transform: translatex(-15px);
+    }
+}
+
+/* Aplica la animación al balón en estado de rebote */
+#tecno:hover .teclado {
+    animation: mover 0.7s infinite;
+}
+
+
+
+
+
+/* Añade una transición de suavizado al efecto de rotación */
+#proceso .mejora {
+    transition: transform 0.5s;
+}
+
+/* Aplica la rotación al pasar el ratón */
+#proceso .mejora:hover {
+    transform: rotate(360deg);
+}
+
+/* Establece un tamaño específico para las imágenes dentro del contenedor */
+
+.imageen{
+    text-align: center;
+}
+#balon img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Oculta la imagen de rebote por defecto */
+#balon .rebote {
+    display: none;
+    margin: 0 auto; /* Añadido para centrar la imagen */
+}
+
+/* Añade una transición de suavizado al efecto */
+#balon:hover .normal {
+    display: none;
+}
+
+#balon:hover .rebote {
+    display: block;
+}
+
+/* Agrega una animación de rebote */
+@keyframes rebote {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Aplica la animación al balón en estado de rebote */
+#balon:hover .rebote {
+    animation: rebote 0.5s infinite;
+}
+
+
+/*Linea del tiempo*/
+#linea-tiempo {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "";
+    background-color: #007bff;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+@media (max-width: 767px) {
+    .timeline-item {
+        text-align: center;
+    }
+
+    .timeline-item::before {
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .timeline-content {
+        text-align: center;
+    }
+}
+
+
+
+/*Footer*/
+footer{
+    left: 0px;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    /* background: rgb(213, 161, 70);
+background: linear-gradient(90deg, rgb(213, 161, 70) 0%, rgb(109, 167, 42) 100%); */
+    font-family: 'Raleway', sans-serif; 
+    text-align: center;
+    /* border-top: 1.7px solid rgb(0, 0, 0); */
+    box-shadow: 0px 0px 10px rgba(26, 176, 49, 0.698);
+
+}
+
+
+.container-fluid a{
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+
+.bi-github,
+.bi-linkedin,
+.bi-envelope {
+    color: black; /* Cambia el color a negro */
+}
+
+.title{
+    font-family: 'Josefin Sans', sans-serif;
+}

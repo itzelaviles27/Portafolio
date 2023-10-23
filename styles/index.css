@@ -1,0 +1,110 @@
+
+
+body {
+    background-color: rgb(245, 245, 245);
+    /* background: rgb(225,198,153);
+background: linear-gradient(90deg, rgba(225,198,153,1) 0%, rgba(138,168,104,1) 100%); */
+    background-size: cover;
+
+}
+
+
+/*Navbar*/
+.navbar {
+    background-color: rgb(245, 245, 245);
+    /* background: rgb(213, 161, 70);
+    background: linear-gradient(90deg, rgb(213, 161, 70) 0%, rgb(109, 167, 42) 100%); */
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: 0px 0px 10px rgba(33, 188, 56, 0.698);
+
+}
+#letras{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: x-large;
+}
+#letras.active{
+    color: green;
+    text-decoration: underline;
+}
+
+
+.icono{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    height: 60px;
+}
+
+
+
+/*Contenido*/
+
+
+
+
+
+
+
+.contenido{
+    background-color: rgb(245, 245, 245);
+    padding: 20px; /* Agregamos un espacio interno para separar el contenido del borde */
+    box-shadow: 0px 0px 10px rgba(50, 51, 50, 0.212); /* Agregamos una sombra */
+    border-radius: 10px; /* Añadimos esquinas redondeadas */
+}
+
+.presentacion{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.cartoon-eve{
+    clip-path: circle(50%);
+    width: 400px;
+    height: 400px;
+    margin-left: -3px;
+}
+.cartoon-eve:hover{
+
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation{
+    from {
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+/*Footer*/
+footer{
+    left: 0px;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    /* background: rgb(213, 161, 70);
+background: linear-gradient(90deg, rgb(213, 161, 70) 0%, rgb(109, 167, 42) 100%); */
+    font-family: 'Raleway', sans-serif; 
+    text-align: center;
+    /* border-top: 1.7px solid rgb(0, 0, 0); */
+    box-shadow: 0px 0px 10px rgba(26, 176, 49, 0.698);
+
+}
+
+
+.container-fluid a{
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+
+.bi-github,
+.bi-linkedin,
+.bi-envelope {
+    color: black; /* Cambia el color a negro */
+}
+
+.title{
+    font-family: 'Josefin Sans', sans-serif;
+}
